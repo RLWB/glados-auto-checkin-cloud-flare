@@ -1,0 +1,16 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "你的项目名称"
+main = "src/index.ts"
+compatibility_date = "2024-09-19"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+API_URL = "https://api.example.com/data"
+GLADOS_COOKIE = "在此填入你的GLADOS_COOKIE"
+GLADOS_TOKEN = "在此填入你的GLADOS_TOKEN"
+GLADOS_USER_AGENT = "在此填入你的用户代理字符串"
+TELEGRAM_BOT_TOKEN = "在此填入你的Telegram机器人令牌"
+TELEGRAM_CHAT_ID = 在此填入你的Telegram聊天ID
+
+[triggers]
+crons = ["0 4 * * *", "6 11 * * *"]  # 对应本地时间 12:00 和 19:06
